@@ -1,5 +1,3 @@
-package lab5;
-
 public class Lab5Exc5 {
     public static void printSpace(int n, int l) {
         int space = n-l;

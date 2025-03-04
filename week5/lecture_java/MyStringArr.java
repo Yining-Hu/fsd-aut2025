@@ -1,5 +1,3 @@
-package lecture5;
-
 public class MyStringArr {
     public static String[] names(int size) {
         String[] s = new String[size];

@@ -1,5 +1,3 @@
-package lab4;
-
 public class Lab4Exc1 {
     public static void main(String[] args) {
         /*

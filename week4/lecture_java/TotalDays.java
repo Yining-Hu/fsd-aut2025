@@ -1,5 +1,3 @@
-package lecture4;
-
 /*
  * Read month and date from STDIN
  * Calculate and show the total days from beginning of the year until the date

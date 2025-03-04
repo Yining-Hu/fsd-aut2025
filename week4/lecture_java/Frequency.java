@@ -1,5 +1,3 @@
-package lecture4;
-
 /*
  * Read integers between 1 and 100 from keyboard until -1 is entered
  * Count and show the occurences of integer-groups: 0-9, 10-19, 20-29, 30-39, ..., 90-99.

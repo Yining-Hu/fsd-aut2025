@@ -1,5 +1,3 @@
-package lecture4;
-
 /*
  * Create a random integer array of size n (read from STDIN) and seed 100
  * Calculate and show the min, max, total, and average values

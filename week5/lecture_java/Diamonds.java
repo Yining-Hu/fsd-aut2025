@@ -1,5 +1,3 @@
-package lecture5;
-
 /*
   Display a diamond of stars of size n (from STDIN)
   

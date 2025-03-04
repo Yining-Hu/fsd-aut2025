@@ -1,5 +1,3 @@
-package lecture5;
-
 import java.util.Scanner;
 
 /*

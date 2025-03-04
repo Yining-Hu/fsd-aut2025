@@ -1,5 +1,3 @@
-package lecture4;
-
 /*
  * Enter password from STDIN until * is entered
  * 

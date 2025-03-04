@@ -1,7 +1,3 @@
-package lab3;
-
-import utils.In;
-
 public class Car {
     private String make;
     private int pos;

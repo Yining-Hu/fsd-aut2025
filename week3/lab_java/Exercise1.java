@@ -1,5 +1,3 @@
-package lab3;
-
 public class Exercise1 {
     static int x = 4;
     static int y = 2;

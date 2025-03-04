@@ -1,4 +1,4 @@
-package lab3.bank;
+package bank;
 
 import java.util.Scanner;
 

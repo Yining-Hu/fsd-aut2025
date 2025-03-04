@@ -1,5 +1,3 @@
-package lab5;
-
 import java.util.Scanner;
 
 public class Lab5Exc1 {

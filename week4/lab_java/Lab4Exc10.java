@@ -1,5 +1,3 @@
-package lab4;
-
 import java.util.Scanner;
 
 class Lab4Exc10{
