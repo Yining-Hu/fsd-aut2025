@@ -1,5 +1,3 @@
-package lecture8;
-
 public abstract class Polygon{
     protected String type;
 

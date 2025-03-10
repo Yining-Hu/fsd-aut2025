@@ -1,5 +1,3 @@
-package lab8.exercise2;
-
 public class Dog extends Animal {
 
     public Dog() {

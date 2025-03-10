@@ -1,5 +1,3 @@
-package lab8.exercise2;
-
 public abstract class Animal {
     protected int position;
     protected String type;

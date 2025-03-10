@@ -1,5 +1,3 @@
-package lecture8;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -18,10 +16,10 @@ public class Shapes {
 
     private void loadShapes() {
         Random r = new Random();
-        shapes.add(new Square(r.nextInt(9) + 1));
-        shapes.add(new Square(r.nextInt(9) + 1));
-        shapes.add(new Triangle(r.nextInt(9) + 1, r.nextInt(9) + 1));
-        shapes.add(new Triangle(r.nextInt(9) + 1, r.nextInt(9) + 1));
+        shapes.add(new Square(5));
+        shapes.add(new Square(10));
+        shapes.add(new Triangle(5, 3));
+        shapes.add(new Triangle(5, 5));
     }
 
     private void show() {

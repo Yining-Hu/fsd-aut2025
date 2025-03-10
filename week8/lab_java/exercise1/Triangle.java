@@ -1,5 +1,3 @@
-package lecture8;
-
 public class Triangle extends Polygon{
     private double height;
     private double base;

@@ -1,11 +1,10 @@
-package lab8.exercise2;
-
 import java.util.ArrayList;
 import java.util.List;
-import utils.In;
+import java.util.Scanner;
 
 public class Farm {
     private List<Animal> animals = new ArrayList<>();
+    private Scanner in = new Scanner(System.in);
 
     public Farm() {
         this.populate(); 
@@ -26,7 +25,7 @@ public class Farm {
 
     private char readChoice() {
         System.out.print("Choice(w/s/x): ");
-        return In.nextChar();
+        return in.next().charAt(0);
     }
 
     private void help() {

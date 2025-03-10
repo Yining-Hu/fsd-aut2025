@@ -1,5 +1,3 @@
-package lecture8;
-
 public class Square extends Polygon {
 
     private double side;
