@@ -38,12 +38,10 @@ public class ArithmeticTest {
         log.info("> Testing add ...");
         int expResult = 6;
         int result = arithmetic.add(x, y);
-
-        // If the values are equal, the test continues without issue.
-        // If the values are not equal, JUnit throws an AssertionError, failing the test.
         assertEquals(expResult, result, "Unexpected result for add operation.");
     }
 
+    @Test
     public void testSub() {
         log.info("> Testing sub ...");
         int expResult = 2;
@@ -51,6 +49,7 @@ public class ArithmeticTest {
         assertEquals(expResult, result);
     }
 
+    @Test
     public void testMul() {
         log.info("> Testing mul ...");
         int expResult = 8;
@@ -58,6 +57,7 @@ public class ArithmeticTest {
         assertEquals(expResult, result);
     }
 
+    @Test
     public void testDiv() {
         log.info("> Testing div ...");
         int expResult = 2;
