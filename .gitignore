@@ -5,3 +5,5 @@ __pycache__/
 *.csv
 *.json
 */target/*
+*.zip
+*.txt
