@@ -8,7 +8,6 @@ root.title("TKinter GUI")
 root.configure(bg="#607b8d")
 root.resizable(False,False)
 
-database = Database()
-box = LoginFrame(root,database)
+box = LoginFrame(root)
 
 root.mainloop()

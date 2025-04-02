@@ -3,11 +3,11 @@ from controller import UserController
 import tkinter.messagebox as mb
 
 class LoginFrame(tk.LabelFrame):
-    def __init__(self,parent,database):
+    def __init__(self,parent):
         super().__init__(parent, text="Sign In", bg="#607b8d", fg="white",
                          padx=20, pady=20, font="Helvetica 10 bold")
         self.parent = parent
-        self.model = database
+        self.controller = UserController()
         self.columnconfigure(0,weight=1)
         self.columnconfigure(1,weight=3)
         self.place(relx=0.5,rely=0.5,anchor="center")
@@ -39,7 +39,7 @@ class LoginFrame(tk.LabelFrame):
         self.passwordField.delete(0,tk.END)
 
     def login(self):
-        user = self.model.match(self.emailText.get(),self.passwordText.get())
+        user = self.controller.match(self.emailText.get(),self.passwordText.get())
         if user != None:
             info = f"Welcome {user.name}"
             ConfirmationView(self.parent, info)

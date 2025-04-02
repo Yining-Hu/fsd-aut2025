@@ -1,4 +1,12 @@
+from model import Database
+
 class UserController:
+    def __init__(self):
+        self.model = Database()
+
+    def match(self,email,password):
+        return self.model.match(email,password)
+
     @staticmethod
     def save(user):
         handler = open("./log.txt","a+")
