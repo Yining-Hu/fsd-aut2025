@@ -1,7 +1,5 @@
 package com;
 
-// import java.text.*;
-
 public class Stadium {
     private Group group;
 

@@ -5,10 +5,6 @@ import java.util.logging.Logger;
 import javafx.application.*;
 import javafx.stage.*;
 import javafx.scene.*;
-// import javafx.scene.control.*;
-// import javafx.scene.layout.*;
-// import javafx.scene.text.*;
-// import javafx.geometry.*;
 import javafx.fxml.*;
 public class StadiumApplication extends Application {
 	public static void main(String[] args) { launch(args); }
