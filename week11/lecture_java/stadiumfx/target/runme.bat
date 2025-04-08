@@ -1,0 +1,1 @@
+start jlink-image\bin\javaw -jar modules\stadiumfx-1.jar

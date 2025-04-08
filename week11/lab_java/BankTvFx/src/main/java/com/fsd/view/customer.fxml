@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+		fx:controller="com.fsd.controller.CustomerController"
+		alignment="center" spacing="10"
+		styleClass="root">
+
+	<Text styleClass="heading" text="${'Customer: ' + controller.customer.name}"/>
+	<TableView fx:id="accountsTv" items="${controller.customer.accounts}" prefWidth="300" prefHeight="200">
+		<placeholder><Label text="No accounts"/></placeholder>
+		<columns>
+			<TableColumn fx:id="typeClm" text="Type">
+				<!-- This is commented out since we have set the cell value factory in Java -->
+				<!-- <cellValueFactory><PropertyValueFactory property="type"/></cellValueFactory> -->
+			</TableColumn>
+			<TableColumn fx:id="balanceClm" text="Balance">
+				<!-- This is commented out since we have set the cell value factory in Java -->
+				<!-- <cellValueFactory><PropertyValueFactory property="balance"/></cellValueFactory> -->
+			</TableColumn>
+			<TableColumn fx:id="creditLimitClm" text="Credit Limit">
+				<!-- This is commented out since we have set the cell value factory in Java -->
+				<!-- <cellValueFactory><PropertyValueFactory property="creditLimit"/></cellValueFactory> -->
+			</TableColumn>
+		</columns>
+	</TableView>
+	<HBox alignment="center" spacing="10" GridPane.columnIndex="0" GridPane.rowIndex="3" GridPane.columnSpan="2">
+		<Button fx:id="viewAccountBtn" disable="true" text="View Account" onAction="#handleViewAccount"/>
+		<Button text="Add Account" onAction="#handleAddAccount"/>
+	</HBox>
+	
+	<stylesheets><URL value="@style.css"/></stylesheets>
+	
+</VBox>

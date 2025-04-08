@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import com.*?>
+
+<GridPane fx:controller="com.StadiumController"
+        xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10"
+>
+<Label text="Seat Group: " GridPane.columnIndex="0" GridPane.rowIndex="0" styleClass="heading" />
+<Text text="${controller.stadium.group.name}" GridPane.columnIndex="1" GridPane.rowIndex="0" styleClass="heading"/>
+<Label text="Capacity: " GridPane.columnIndex="0" GridPane.rowIndex="1" />
+<Text text="${controller.stadium.group.capacity}" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+<Label text="Price: ($) " GridPane.columnIndex="0" GridPane.rowIndex="2" />
+<Text text="${controller.stadium.group.price}" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+<Label text="Sold: " GridPane.columnIndex="0" GridPane.rowIndex="3" />
+<Text text="${controller.stadium.group.sold}" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+<Label text="Left: " GridPane.columnIndex="0" GridPane.rowIndex="4" />
+<Text text="${controller.stadium.group.left}" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+<Label text="Income: " GridPane.columnIndex="0" GridPane.rowIndex="5" />
+<Text text="${controller.stadium.group.income}" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+<Label text="Sell: " GridPane.columnIndex="0" GridPane.rowIndex="6" />
+<TextField fx:id="amountTf" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+<HBox alignment="center_right" GridPane.columnIndex="1" GridPane.rowIndex="7">
+    <Button fx:id="sellBtn" text="Sell" onAction="#handleSell" />
+</HBox>
+<stylesheets>
+    <URL value="@../styles/stadium.css" />
+</stylesheets>
+</GridPane>

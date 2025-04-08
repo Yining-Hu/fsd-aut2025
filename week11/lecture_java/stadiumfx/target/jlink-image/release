@@ -1,0 +1,2 @@
+JAVA_VERSION="17.0.10"
+MODULES="java.base java.logging java.datatransfer java.xml java.prefs java.desktop javafx.base jdk.unsupported javafx.graphics javafx.controls java.scripting javafx.fxml javafx.media com"
